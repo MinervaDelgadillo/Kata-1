@@ -1,0 +1,48 @@
+{
+  "list": [
+    {
+      "mail_id": "503663567",
+      "mail_from": "tich@bunsan.io",
+      "mail_subject": "Almost done! We need to verify your email",
+      "mail_excerpt": "\n      \n        \n          \n\t\t\t\t\t\t",
+      "mail_timestamp": "1583886180",
+      "mail_read": "0",
+      "mail_date": "00:23:00",
+      "att": "0",
+      "mail_size": "4477"
+    },
+    {
+      "mail_from": "no-reply@guerrillamail.com",
+      "mail_timestamp": 0,
+      "mail_read": 0,
+      "mail_date": "00:22:41",
+      "reply_to": "",
+      "mail_subject": "Welcome to Guerrilla Mail",
+      "mail_excerpt": "Dear Random User,\r\n\r\nThank you for using Guerrilla Mail - your temporary email address friend and spam fighters ally!\r\n\r\nYour disposable email address has been created ready for use.\r\n\r\nEmail: ojmvcn",
+      "mail_id": 1,
+      "att": 0,
+      "content_type": "text",
+      "mail_recipient": "ojmvcnft",
+      "source_id": 0,
+      "source_mail_id": 0,
+      "mail_body": "Dear Random User,\r\n\r\nThank you for using Guerrilla Mail - your temporary email address friend and spam fighters ally!\r\n\r\nYour disposable email address has been created ready for use.\r\n\r\nEmail: ojmvcnft@sharklasers.com\r\n\r\nTips & Notes:\r\n\r\n- You can change this email address! Place your mouse over the Inbox ID at the top of this page and click to edit.\r\n\r\n- Once you change to a new address, the old address will remain available, simply change back to it. (Note: email is kept for 1 hour)\r\n\r\n- Waiting for your mail? There is no need to refresh the page, new emails will be added to the list as they come in.\r\n\r\n- All Emails are deleted after 1 hour.\r\n\r\nClick on the back the \"« Back to inbox\" to go back to the mail list\r\n\r\nThanks,\r\n\r\nGuerrilla Mail Team\r\nhttp://www.guerrillamail.com/\r\n\r\n\"Free to download, but you have to give your email address so they can inevitably attempt to sell you stuff in the future? guerrillamail.com FTW!\"\r\n\r\nConnect with us:\r\nhttps://www.facebook.com/GuerrillaMail\r\nhttps://twitter.com/GuerrillaMail",
+      "size": 1034
+    }
+  ],
+  "count": "1",
+  "email": "ojmvcnft@guerrillamailblock.com",
+  "alias": "kixwmg+1bwt4za7zxkx0",
+  "ts": 1583886161,
+  "sid_token": "7n3fg0f0rfdvhe6ucg562msma0",
+  "stats": {
+    "sequence_mail": "61,502,415",
+    "created_addresses": 38163242,
+    "received_emails": "12,584,714,154",
+    "total": "12,523,211,739",
+    "total_per_hour": "392800"
+  },
+  "auth": {
+    "success": true,
+    "error_codes": []
+  }
+}

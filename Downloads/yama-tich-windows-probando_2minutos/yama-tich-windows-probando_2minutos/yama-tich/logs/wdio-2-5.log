@@ -1,0 +1,985 @@
+2022-02-22T22:23:27.331Z WARN @wdio/utils:shim: You are running tests with @wdio/sync which will be discontinued starting Node.js v16.Read more on https://github.com/webdriverio/webdriverio/discussions/6702
+2022-02-22T22:23:29.381Z INFO @wdio/local-runner: Run worker command: run
+2022-02-22T22:23:29.734Z DEBUG @wdio/config:utils: Found '@babel/register' package, auto-compiling files with Babel
+2022-02-22T22:23:30.843Z DEBUG @wdio/local-runner:utils: init remote session
+2022-02-22T22:23:30.849Z DEBUG @wdio/utils:initialiseServices: initialise service "shared-store" as NPM package
+2022-02-22T22:23:31.000Z DEBUG @wdio/sync: Finished to run "beforeSession" hook in 3ms
+2022-02-22T22:23:32.018Z DEBUG @wdio/local-runner:utils: init remote session
+2022-02-22T22:23:32.032Z INFO webdriver: Initiate new session using the WebDriver protocol
+2022-02-22T22:23:32.061Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session
+2022-02-22T22:23:32.061Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      'goog:chromeOptions': [Object],
+      'goog:loggingPrefs': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    'goog:chromeOptions': { args: [Array] },
+    'goog:loggingPrefs': { browser: 'ALL' }
+  }
+}
+2022-02-22T22:23:32.772Z DEBUG @wdio/sync: Finished to run "before" hook in 0ms
+2022-02-22T22:23:43.230Z INFO webdriver: COMMAND navigateTo("https://qa.tich.academy/denso/a4114b7e-0c72-46e5-ab22-360ad8811ee6")
+2022-02-22T22:23:43.230Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/url
+2022-02-22T22:23:43.230Z INFO webdriver: DATA {
+  url: 'https://qa.tich.academy/denso/a4114b7e-0c72-46e5-ab22-360ad8811ee6'
+}
+2022-02-22T22:23:47.430Z INFO webdriver: COMMAND executeScript("return (() => localStorage.setItem("debug", "kamaji-client:*")).apply(null, arguments)", <object>)
+2022-02-22T22:23:47.431Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/execute/sync
+2022-02-22T22:23:47.431Z INFO webdriver: DATA {
+  script: 'return (() => localStorage.setItem("debug", "kamaji-client:*")).apply(null, arguments)',
+  args: []
+}
+2022-02-22T22:23:47.530Z INFO webdriver: COMMAND refresh()
+2022-02-22T22:23:47.531Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/refresh
+2022-02-22T22:23:50.625Z INFO webdriver: COMMAND findElement("css selector", "form input[name=name]")
+2022-02-22T22:23:50.625Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:23:50.625Z INFO webdriver: DATA { using: 'css selector', value: 'form input[name=name]' }
+2022-02-22T22:23:50.718Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '9abb4f24-337d-4199-a32c-33ad43cd5007'
+}
+2022-02-22T22:23:50.724Z INFO webdriver: COMMAND elementClear("9abb4f24-337d-4199-a32c-33ad43cd5007")
+2022-02-22T22:23:50.724Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/9abb4f24-337d-4199-a32c-33ad43cd5007/clear
+2022-02-22T22:23:50.936Z INFO webdriver: COMMAND elementSendKeys("9abb4f24-337d-4199-a32c-33ad43cd5007", "guest_3")
+2022-02-22T22:23:50.937Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/9abb4f24-337d-4199-a32c-33ad43cd5007/value
+2022-02-22T22:23:50.937Z INFO webdriver: DATA { text: 'guest_3' }
+2022-02-22T22:23:51.468Z INFO webdriver: COMMAND findElement("css selector", "form input[name=email]")
+2022-02-22T22:23:51.468Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:23:51.468Z INFO webdriver: DATA { using: 'css selector', value: 'form input[name=email]' }
+2022-02-22T22:23:51.563Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '9a6da675-24bf-4be5-a923-36fc45d5df67'
+}
+2022-02-22T22:23:51.568Z INFO webdriver: COMMAND elementClear("9a6da675-24bf-4be5-a923-36fc45d5df67")
+2022-02-22T22:23:51.568Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/9a6da675-24bf-4be5-a923-36fc45d5df67/clear
+2022-02-22T22:23:51.776Z INFO webdriver: COMMAND elementSendKeys("9a6da675-24bf-4be5-a923-36fc45d5df67", "test_guest_A_3@bunsan.io")
+2022-02-22T22:23:51.776Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/9a6da675-24bf-4be5-a923-36fc45d5df67/value
+2022-02-22T22:23:51.776Z INFO webdriver: DATA { text: 'test_guest_A_3@bunsan.io' }
+2022-02-22T22:23:52.744Z INFO webdriver: COMMAND findElement("css selector", "form button[type="submit"]")
+2022-02-22T22:23:52.744Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:23:52.744Z INFO webdriver: DATA { using: 'css selector', value: 'form button[type="submit"]' }
+2022-02-22T22:23:52.883Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '74058d8f-d6a7-4468-835f-50d9e40d22d6'
+}
+2022-02-22T22:23:52.885Z INFO webdriver: COMMAND elementClick("74058d8f-d6a7-4468-835f-50d9e40d22d6")
+2022-02-22T22:23:52.886Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/74058d8f-d6a7-4468-835f-50d9e40d22d6/click
+2022-02-22T22:29:53.435Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Mic"]")
+2022-02-22T22:29:53.436Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:29:53.437Z INFO webdriver: DATA { using: 'xpath', value: './/button[normalize-space() = "Mic"]' }
+2022-02-22T22:29:53.597Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '3bdbb76a-ed84-451f-bbe6-da7f1e26c17c'
+}
+2022-02-22T22:29:53.606Z INFO webdriver: COMMAND elementClick("3bdbb76a-ed84-451f-bbe6-da7f1e26c17c")
+2022-02-22T22:29:53.607Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/3bdbb76a-ed84-451f-bbe6-da7f1e26c17c/click
+2022-02-22T22:29:53.744Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Camera"]")
+2022-02-22T22:29:53.744Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:29:53.744Z INFO webdriver: DATA { using: 'xpath', value: './/button[normalize-space() = "Camera"]' }
+2022-02-22T22:29:53.886Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'ae44c3c2-d57c-4bc4-9f8f-631f10ecf501'
+}
+2022-02-22T22:29:53.897Z INFO webdriver: COMMAND elementClick("ae44c3c2-d57c-4bc4-9f8f-631f10ecf501")
+2022-02-22T22:29:53.898Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/ae44c3c2-d57c-4bc4-9f8f-631f10ecf501/click
+2022-02-22T22:30:54.034Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Mic"]")
+2022-02-22T22:30:54.036Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:30:54.036Z INFO webdriver: DATA { using: 'xpath', value: './/button[normalize-space() = "Mic"]' }
+2022-02-22T22:30:54.224Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '3bdbb76a-ed84-451f-bbe6-da7f1e26c17c'
+}
+2022-02-22T22:30:54.228Z INFO webdriver: COMMAND elementClick("3bdbb76a-ed84-451f-bbe6-da7f1e26c17c")
+2022-02-22T22:30:54.228Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/3bdbb76a-ed84-451f-bbe6-da7f1e26c17c/click
+2022-02-22T22:30:54.623Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Camera"]")
+2022-02-22T22:30:54.623Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:30:54.623Z INFO webdriver: DATA { using: 'xpath', value: './/button[normalize-space() = "Camera"]' }
+2022-02-22T22:30:54.936Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'ae44c3c2-d57c-4bc4-9f8f-631f10ecf501'
+}
+2022-02-22T22:30:54.939Z INFO webdriver: COMMAND elementClick("ae44c3c2-d57c-4bc4-9f8f-631f10ecf501")
+2022-02-22T22:30:54.939Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element/ae44c3c2-d57c-4bc4-9f8f-631f10ecf501/click
+2022-02-22T22:30:55.176Z DEBUG @wdio/sync: Finished to run "afterTest" hook in 1ms
+2022-02-22T22:30:55.180Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:30:55.180Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:30:55.180Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:30:55.350Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space() = "Reload session"]"}\n' +
+    '  (Session info: headless chrome=98.0.4758.102)',
+  stacktrace: '#0 0x563e5b28fb33 <unknown>\n' +
+    '#1 0x563e5ad586d8 <unknown>\n' +
+    '#2 0x563e5ad8e6f1 <unknown>\n' +
+    '#3 0x563e5ad8e8b1 <unknown>\n' +
+    '#4 0x563e5adc1574 <unknown>\n' +
+    '#5 0x563e5adac08d <unknown>\n' +
+    '#6 0x563e5adbf2fb <unknown>\n' +
+    '#7 0x563e5adabf53 <unknown>\n' +
+    '#8 0x563e5ad81a0a <unknown>\n' +
+    '#9 0x563e5ad82ad5 <unknown>\n' +
+    '#10 0x563e5b2c12fd <unknown>\n' +
+    '#11 0x563e5b2da4bb <unknown>\n' +
+    '#12 0x563e5b2c30d5 <unknown>\n' +
+    '#13 0x563e5b2db145 <unknown>\n' +
+    '#14 0x563e5b2b6aaf <unknown>\n' +
+    '#15 0x563e5b2f7ba8 <unknown>\n' +
+    '#16 0x563e5b2f7d28 <unknown>\n' +
+    '#17 0x563e5b31248d <unknown>\n' +
+    '#18 0x7f5a0d7266db <unknown>\n'
+}
+2022-02-22T22:30:55.361Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:30:55.361Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/elements
+2022-02-22T22:30:55.361Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:30:55.443Z INFO webdriver: RESULT []
+2022-02-22T22:31:55.454Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:31:55.454Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:31:55.454Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:31:55.603Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space() = "Reload session"]"}\n' +
+    '  (Session info: headless chrome=98.0.4758.102)',
+  stacktrace: '#0 0x563e5b28fb33 <unknown>\n' +
+    '#1 0x563e5ad586d8 <unknown>\n' +
+    '#2 0x563e5ad8e6f1 <unknown>\n' +
+    '#3 0x563e5ad8e8b1 <unknown>\n' +
+    '#4 0x563e5adc1574 <unknown>\n' +
+    '#5 0x563e5adac08d <unknown>\n' +
+    '#6 0x563e5adbf2fb <unknown>\n' +
+    '#7 0x563e5adabf53 <unknown>\n' +
+    '#8 0x563e5ad81a0a <unknown>\n' +
+    '#9 0x563e5ad82ad5 <unknown>\n' +
+    '#10 0x563e5b2c12fd <unknown>\n' +
+    '#11 0x563e5b2da4bb <unknown>\n' +
+    '#12 0x563e5b2c30d5 <unknown>\n' +
+    '#13 0x563e5b2db145 <unknown>\n' +
+    '#14 0x563e5b2b6aaf <unknown>\n' +
+    '#15 0x563e5b2f7ba8 <unknown>\n' +
+    '#16 0x563e5b2f7d28 <unknown>\n' +
+    '#17 0x563e5b31248d <unknown>\n' +
+    '#18 0x7f5a0d7266db <unknown>\n'
+}
+2022-02-22T22:31:55.608Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:31:55.608Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/elements
+2022-02-22T22:31:55.608Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:31:55.689Z INFO webdriver: RESULT []
+2022-02-22T22:32:55.706Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:32:55.706Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:32:55.707Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:32:55.907Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space() = "Reload session"]"}\n' +
+    '  (Session info: headless chrome=98.0.4758.102)',
+  stacktrace: '#0 0x563e5b28fb33 <unknown>\n' +
+    '#1 0x563e5ad586d8 <unknown>\n' +
+    '#2 0x563e5ad8e6f1 <unknown>\n' +
+    '#3 0x563e5ad8e8b1 <unknown>\n' +
+    '#4 0x563e5adc1574 <unknown>\n' +
+    '#5 0x563e5adac08d <unknown>\n' +
+    '#6 0x563e5adbf2fb <unknown>\n' +
+    '#7 0x563e5adabf53 <unknown>\n' +
+    '#8 0x563e5ad81a0a <unknown>\n' +
+    '#9 0x563e5ad82ad5 <unknown>\n' +
+    '#10 0x563e5b2c12fd <unknown>\n' +
+    '#11 0x563e5b2da4bb <unknown>\n' +
+    '#12 0x563e5b2c30d5 <unknown>\n' +
+    '#13 0x563e5b2db145 <unknown>\n' +
+    '#14 0x563e5b2b6aaf <unknown>\n' +
+    '#15 0x563e5b2f7ba8 <unknown>\n' +
+    '#16 0x563e5b2f7d28 <unknown>\n' +
+    '#17 0x563e5b31248d <unknown>\n' +
+    '#18 0x7f5a0d7266db <unknown>\n'
+}
+2022-02-22T22:32:55.910Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:32:55.910Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/elements
+2022-02-22T22:32:55.910Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:32:56.027Z INFO webdriver: RESULT []
+2022-02-22T22:33:56.036Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:33:56.037Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:33:56.037Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:33:56.238Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space() = "Reload session"]"}\n' +
+    '  (Session info: headless chrome=98.0.4758.102)',
+  stacktrace: '#0 0x563e5b28fb33 <unknown>\n' +
+    '#1 0x563e5ad586d8 <unknown>\n' +
+    '#2 0x563e5ad8e6f1 <unknown>\n' +
+    '#3 0x563e5ad8e8b1 <unknown>\n' +
+    '#4 0x563e5adc1574 <unknown>\n' +
+    '#5 0x563e5adac08d <unknown>\n' +
+    '#6 0x563e5adbf2fb <unknown>\n' +
+    '#7 0x563e5adabf53 <unknown>\n' +
+    '#8 0x563e5ad81a0a <unknown>\n' +
+    '#9 0x563e5ad82ad5 <unknown>\n' +
+    '#10 0x563e5b2c12fd <unknown>\n' +
+    '#11 0x563e5b2da4bb <unknown>\n' +
+    '#12 0x563e5b2c30d5 <unknown>\n' +
+    '#13 0x563e5b2db145 <unknown>\n' +
+    '#14 0x563e5b2b6aaf <unknown>\n' +
+    '#15 0x563e5b2f7ba8 <unknown>\n' +
+    '#16 0x563e5b2f7d28 <unknown>\n' +
+    '#17 0x563e5b31248d <unknown>\n' +
+    '#18 0x7f5a0d7266db <unknown>\n'
+}
+2022-02-22T22:33:56.242Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:33:56.242Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/elements
+2022-02-22T22:33:56.242Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:33:56.331Z INFO webdriver: RESULT []
+2022-02-22T22:34:56.333Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:34:56.334Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:34:56.334Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:34:56.507Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space() = "Reload session"]"}\n' +
+    '  (Session info: headless chrome=98.0.4758.102)',
+  stacktrace: '#0 0x563e5b28fb33 <unknown>\n' +
+    '#1 0x563e5ad586d8 <unknown>\n' +
+    '#2 0x563e5ad8e6f1 <unknown>\n' +
+    '#3 0x563e5ad8e8b1 <unknown>\n' +
+    '#4 0x563e5adc1574 <unknown>\n' +
+    '#5 0x563e5adac08d <unknown>\n' +
+    '#6 0x563e5adbf2fb <unknown>\n' +
+    '#7 0x563e5adabf53 <unknown>\n' +
+    '#8 0x563e5ad81a0a <unknown>\n' +
+    '#9 0x563e5ad82ad5 <unknown>\n' +
+    '#10 0x563e5b2c12fd <unknown>\n' +
+    '#11 0x563e5b2da4bb <unknown>\n' +
+    '#12 0x563e5b2c30d5 <unknown>\n' +
+    '#13 0x563e5b2db145 <unknown>\n' +
+    '#14 0x563e5b2b6aaf <unknown>\n' +
+    '#15 0x563e5b2f7ba8 <unknown>\n' +
+    '#16 0x563e5b2f7d28 <unknown>\n' +
+    '#17 0x563e5b31248d <unknown>\n' +
+    '#18 0x7f5a0d7266db <unknown>\n'
+}
+2022-02-22T22:34:56.510Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:34:56.510Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/elements
+2022-02-22T22:34:56.510Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:34:56.605Z INFO webdriver: RESULT []
+2022-02-22T22:35:56.615Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:35:56.615Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:35:56.615Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:35:56.767Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space() = "Reload session"]"}\n' +
+    '  (Session info: headless chrome=98.0.4758.102)',
+  stacktrace: '#0 0x563e5b28fb33 <unknown>\n' +
+    '#1 0x563e5ad586d8 <unknown>\n' +
+    '#2 0x563e5ad8e6f1 <unknown>\n' +
+    '#3 0x563e5ad8e8b1 <unknown>\n' +
+    '#4 0x563e5adc1574 <unknown>\n' +
+    '#5 0x563e5adac08d <unknown>\n' +
+    '#6 0x563e5adbf2fb <unknown>\n' +
+    '#7 0x563e5adabf53 <unknown>\n' +
+    '#8 0x563e5ad81a0a <unknown>\n' +
+    '#9 0x563e5ad82ad5 <unknown>\n' +
+    '#10 0x563e5b2c12fd <unknown>\n' +
+    '#11 0x563e5b2da4bb <unknown>\n' +
+    '#12 0x563e5b2c30d5 <unknown>\n' +
+    '#13 0x563e5b2db145 <unknown>\n' +
+    '#14 0x563e5b2b6aaf <unknown>\n' +
+    '#15 0x563e5b2f7ba8 <unknown>\n' +
+    '#16 0x563e5b2f7d28 <unknown>\n' +
+    '#17 0x563e5b31248d <unknown>\n' +
+    '#18 0x7f5a0d7266db <unknown>\n'
+}
+2022-02-22T22:35:56.772Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:35:56.772Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/elements
+2022-02-22T22:35:56.772Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:35:56.853Z INFO webdriver: RESULT []
+2022-02-22T22:36:56.859Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:36:56.860Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/element
+2022-02-22T22:36:56.860Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:36:57.028Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space() = "Reload session"]"}\n' +
+    '  (Session info: headless chrome=98.0.4758.102)',
+  stacktrace: '#0 0x563e5b28fb33 <unknown>\n' +
+    '#1 0x563e5ad586d8 <unknown>\n' +
+    '#2 0x563e5ad8e6f1 <unknown>\n' +
+    '#3 0x563e5ad8e8b1 <unknown>\n' +
+    '#4 0x563e5adc1574 <unknown>\n' +
+    '#5 0x563e5adac08d <unknown>\n' +
+    '#6 0x563e5adbf2fb <unknown>\n' +
+    '#7 0x563e5adabf53 <unknown>\n' +
+    '#8 0x563e5ad81a0a <unknown>\n' +
+    '#9 0x563e5ad82ad5 <unknown>\n' +
+    '#10 0x563e5b2c12fd <unknown>\n' +
+    '#11 0x563e5b2da4bb <unknown>\n' +
+    '#12 0x563e5b2c30d5 <unknown>\n' +
+    '#13 0x563e5b2db145 <unknown>\n' +
+    '#14 0x563e5b2b6aaf <unknown>\n' +
+    '#15 0x563e5b2f7ba8 <unknown>\n' +
+    '#16 0x563e5b2f7d28 <unknown>\n' +
+    '#17 0x563e5b31248d <unknown>\n' +
+    '#18 0x7f5a0d7266db <unknown>\n'
+}
+2022-02-22T22:36:57.032Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-22T22:36:57.032Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/elements
+2022-02-22T22:36:57.032Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-22T22:36:57.120Z INFO webdriver: RESULT []
+2022-02-22T22:37:57.136Z DEBUG @wdio/sync: Finished to run "afterTest" hook in 0ms
+2022-02-22T22:37:57.140Z INFO webdriver: COMMAND takeScreenshot()
+2022-02-22T22:37:57.140Z INFO webdriver: [GET] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/screenshot
+2022-02-22T22:37:58.085Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABQAAAAMgCAYAAAB8mM/7AAAAAXNSR0IArs4c6...
+2022-02-22T22:37:58.123Z INFO webdriver: COMMAND takeScreenshot()
+2022-02-22T22:37:58.123Z INFO webdriver: [GET] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/screenshot
+2022-02-22T22:37:58.766Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABQAAAAMgCAYAAAB8mM/7AAAAAXNSR0IArs4c6...
+2022-02-22T22:37:58.773Z DEBUG @wdio/sync: Finished to run "afterTest" hook in 650ms
+2022-02-22T22:37:58.804Z DEBUG @wdio/sync: Finished to run "afterSuite" hook in 0ms
+2022-02-22T22:37:58.810Z INFO webdriver: COMMAND getLogTypes()
+2022-02-22T22:37:58.810Z INFO webdriver: [GET] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/se/log/types
+2022-02-22T22:37:58.881Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2022-02-22T22:37:58.881Z DEBUG @wdio/runner: Fetching logs for browser, driver
+2022-02-22T22:37:58.882Z INFO webdriver: COMMAND getLogs("browser")
+2022-02-22T22:37:58.882Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/se/log
+2022-02-22T22:37:58.882Z INFO webdriver: DATA { type: 'browser' }
+2022-02-22T22:37:58.883Z INFO webdriver: COMMAND getLogs("driver")
+2022-02-22T22:37:58.883Z INFO webdriver: [POST] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315/se/log
+2022-02-22T22:37:58.883Z INFO webdriver: DATA { type: 'driver' }
+2022-02-22T22:37:59.033Z INFO webdriver: RESULT [
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/674bd6a.js 1:79363 "Download the Vue Devtools extension for a better development experience:\\nhttps://github.com/vuejs/vue-devtools"',
+    source: 'console-api',
+    timestamp: 1645568624197
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/674bd6a.js 1:79565 "You are running Vue in development mode.\\nMake sure to turn on production mode when deploying for production.\\nSee more tips at https://vuejs.org/guide/deployment.html"',
+    source: 'console-api',
+    timestamp: 1645568624197
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/674bd6a.js 1:79363 "Download the Vue Devtools extension for a better development experience:\\nhttps://github.com/vuejs/vue-devtools"',
+    source: 'console-api',
+    timestamp: 1645568628909
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/674bd6a.js 1:79565 "You are running Vue in development mode.\\nMake sure to turn on production mode when deploying for production.\\nSee more tips at https://vuejs.org/guide/deployment.html"',
+    source: 'console-api',
+    timestamp: 1645568628911
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:SessionChannelService %cjoinChannel() | Success joining web_lobby:704e55d5-eb72-48c3-a3c3-2ca8b53e6301:6f511cc0-62e1-4728-b17c-a279cd1e2d2d%c +0ms" "color: #CC00FF" "color: inherit" "color: #CC00FF"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:SessionChannelService %cjoinChannel() | Success joining board:6f511cc0-62e1-4728-b17c-a279cd1e2d2d%c +42ms" "color: #CC00FF" "color: inherit" "color: #CC00FF"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:SessionChannelService %cjoinChannel() | Success joining page:6f511cc0-62e1-4728-b17c-a279cd1e2d2d%c +3ms" "color: #CC00FF" "color: inherit" "color: #CC00FF"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:SessionChannelService %cconnect() | Connected to session a4114b7e-0c72-46e5-ab22-360ad8811ee6 channels%c +4ms" "color: #CC00FF" "color: inherit" "color: #CC00FF"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %cKamaji client v. 0.1.5 initialized%c +0ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %cjoin() | Joining to a4114b7e-0c72-46e5-ab22-360ad8811ee6%c +16ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:ApiService %cgetRtpCapabilities() | [object Object]%c +0ms" "color: #33CCCC" "color: inherit" "color: #33CCCC"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconnect()%c +0ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconnect() | Connected to wss://qa.tich.academy/kamaji/socket @room a4114b7e-0c72-46e5-ab22-360ad8811ee6%c +83ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %cjoin() | ICE servers were configured%c +297ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %csetClientConnection() | \\n sendTransport: f86e5427-800d-44fc-bf8c-fbe03bb55a8a \\n recvTransport: 5690bae2-9dac-4afc-be27-2a75322b4f98%c +3ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csyncOnlineUsers() | Online users: ef616c69-7968-4b09-9551-3fb3e419b4cb,8f1434b4-2e2c-4041-84f3-bf60729e116f,704e55d5-eb72-48c3-a3c3-2ca8b53e6301,52fcd444-2e79-4cee-acc7-33cd479c7a95,0f48bca8-f207-488d-a49d-cadd59d70663%c +0ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conVolumes() | not found receiver connected to producer: 42ba8be2-fc84-4ad1-a0f5-7e1aaade12ee%c +3s" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conVolumes() | not found receiver connected to producer: 42ba8be2-fc84-4ad1-a0f5-7e1aaade12ee%c +1ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993723
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csyncOnlineUsers() | Online users: ef616c69-7968-4b09-9551-3fb3e419b4cb,8f1434b4-2e2c-4041-84f3-bf60729e116f,704e55d5-eb72-48c3-a3c3-2ca8b53e6301,52fcd444-2e79-4cee-acc7-33cd479c7a95,0f48bca8-f207-488d-a49d-cadd59d70663,eb1acc54-715f-4933-87e6-5c99dadcf8b9%c +3s" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewPeer() | new peer 54637edf-52ce-4d86-b977-3119a1f323b5%c +828ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conVolumes() | not found receiver connected to producer: 42ba8be2-fc84-4ad1-a0f5-7e1aaade12ee%c +81ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconnectTransport() | Peer: 00617b2a-4e60-49ed-af06-909c07ace96a \\n Transport: 5690bae2-9dac-4afc-be27-2a75322b4f98%c +4s" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conConnectTransport() | transport connected: 5690bae2-9dac-4afc-be27-2a75322b4f98%c +52ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conVolumes() | not found receiver connected to producer: 42ba8be2-fc84-4ad1-a0f5-7e1aaade12ee%c +6ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:f7cb0d4d-2d24-4c44-9748-dba66991390a%c +108ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: ef616c69-7968-4b09-9551-3fb3e419b4cb:f7cb0d4d-2d24-4c44-9748-dba66991390a:audio%c +867ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created f7cb0d4d-2d24-4c44-9748-dba66991390a%c +151ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'WARNING',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:WARN:StreamPlayer %csetupStream() | Stream f7cb0d4d-2d24-4c44-9748-dba66991390a will play muted%c +0ms" "color: #FF3366" "color: inherit" "color: #FF3366"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conVolumes() | not found receiver connected to producer: 42ba8be2-fc84-4ad1-a0f5-7e1aaade12ee%c +279ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:002e9252-5b9b-4947-9d12-aa17b2b43e59%c +360ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:df7353db-23b7-4dcd-b6bb-761b5ab02b74%c +3ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:51f92cb6-89f8-464d-896f-6792756ff975%c +4ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 8f1434b4-2e2c-4041-84f3-bf60729e116f:002e9252-5b9b-4947-9d12-aa17b2b43e59:audio%c +334ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created 002e9252-5b9b-4947-9d12-aa17b2b43e59%c +48ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'WARNING',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:WARN:StreamPlayer %csetupStream() | Stream 002e9252-5b9b-4947-9d12-aa17b2b43e59 will play muted%c +318ms" "color: #FF3366" "color: inherit" "color: #FF3366"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 52fcd444-2e79-4cee-acc7-33cd479c7a95:df7353db-23b7-4dcd-b6bb-761b5ab02b74:audio%c +63ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created df7353db-23b7-4dcd-b6bb-761b5ab02b74%c +63ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 52fcd444-2e79-4cee-acc7-33cd479c7a95:51f92cb6-89f8-464d-896f-6792756ff975:video%c +89ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created 51f92cb6-89f8-464d-896f-6792756ff975%c +86ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csyncOnlineUsers() | Online users: ef616c69-7968-4b09-9551-3fb3e419b4cb,8f1434b4-2e2c-4041-84f3-bf60729e116f,704e55d5-eb72-48c3-a3c3-2ca8b53e6301,52fcd444-2e79-4cee-acc7-33cd479c7a95,0f48bca8-f207-488d-a49d-cadd59d70663,eb1acc54-715f-4933-87e6-5c99dadcf8b9,1dfc473c-7ca2-4c15-877b-0185064d625d%c +2s" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewPeer() | new peer 36798ee0-0af1-4f64-b846-83bfdb09b16b%c +3s" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csyncOnlineUsers() | Online users: ef616c69-7968-4b09-9551-3fb3e419b4cb,8f1434b4-2e2c-4041-84f3-bf60729e116f,704e55d5-eb72-48c3-a3c3-2ca8b53e6301,52fcd444-2e79-4cee-acc7-33cd479c7a95,0f48bca8-f207-488d-a49d-cadd59d70663,eb1acc54-715f-4933-87e6-5c99dadcf8b9,1dfc473c-7ca2-4c15-877b-0185064d625d,5ba58205-daee-4e23-bbea-46257ea3da14%c +2s" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewPeer() | new peer 6ba59e02-7642-4fbc-a72d-408dba13dad0%c +2s" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993724
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | receiver notified%c +42s" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | receiver notified%c +516ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconsume() | 99813273-830e-4520-9c7c-e82fa3ea85bf:cbd12585-d018-4374-8a9b-354a9c0f8fb1%c +4m" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:1915dc8f-fbd8-42ee-b8c2-3a5b6fca65ec%c +22ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 0f48bca8-f207-488d-a49d-cadd59d70663:1915dc8f-fbd8-42ee-b8c2-3a5b6fca65ec:audio%c +4m" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created 1915dc8f-fbd8-42ee-b8c2-3a5b6fca65ec%c +3m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewProducer() | receiver created%c +6ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconsume() | 99813273-830e-4520-9c7c-e82fa3ea85bf:efe12c86-0007-49da-9d87-88206c4f9658%c +259ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:0dcd324e-1239-46d5-99f4-2fb8f0765a45%c +62ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 0f48bca8-f207-488d-a49d-cadd59d70663:0dcd324e-1239-46d5-99f4-2fb8f0765a45:video%c +326ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created 0dcd324e-1239-46d5-99f4-2fb8f0765a45%c +317ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewProducer() | receiver created%c +64ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | receiver notified%c +1m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | receiver notified%c +610ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993725
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconnectTransport() | Peer: 00617b2a-4e60-49ed-af06-909c07ace96a \\n Transport: f86e5427-800d-44fc-bf8c-fbe03bb55a8a%c +2m" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993966
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conConnectTransport() | transport connected: f86e5427-800d-44fc-bf8c-fbe03bb55a8a%c +1m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993966
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cproduce() | 00617b2a-4e60-49ed-af06-909c07ace96a:audio%c +35ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645568993966
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProduce() | producing audio:4d6320a0-fde5-4049-ab6b-12ac8d7e5e74%c +35ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645568993966
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 704e55d5-eb72-48c3-a3c3-2ca8b53e6301:4d6320a0-fde5-4049-ab6b-12ac8d7e5e74:audio%c +2m" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645568993966
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cproduce() | 00617b2a-4e60-49ed-af06-909c07ace96a:video%c +303ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569054329
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProduce() | producing video:7b58ea02-42db-453c-a2f1-0751163d8b2a%c +303ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569054329
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 704e55d5-eb72-48c3-a3c3-2ca8b53e6301:7b58ea02-42db-453c-a2f1-0751163d8b2a:video%c +303ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645569054329
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cpauseProducer() | 00617b2a-4e60-49ed-af06-909c07ace96a:4d6320a0-fde5-4049-ab6b-12ac8d7e5e74%c +1m" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569054648
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | producer not found%c +1m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569054862
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cpauseProducer() | 00617b2a-4e60-49ed-af06-909c07ace96a:7b58ea02-42db-453c-a2f1-0751163d8b2a%c +598ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569055243
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | producer not found%c +551ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569055407
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconsume() | 54637edf-52ce-4d86-b977-3119a1f323b5:fba75f62-5d3c-4e32-aece-0d74301db549%c +1m" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:cceb4467-223a-463b-8fb9-242a6add688f%c +138ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: eb1acc54-715f-4933-87e6-5c99dadcf8b9:cceb4467-223a-463b-8fb9-242a6add688f:audio%c +2m" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created cceb4467-223a-463b-8fb9-242a6add688f%c +1m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewProducer() | receiver created%c +30ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconsume() | 54637edf-52ce-4d86-b977-3119a1f323b5:35c86457-6de9-47da-b29f-e04aed92c988%c +293ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:4483cad3-b313-45ea-999a-a8c7eca10452%c +108ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: eb1acc54-715f-4933-87e6-5c99dadcf8b9:4483cad3-b313-45ea-999a-a8c7eca10452:video%c +420ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created 4483cad3-b313-45ea-999a-a8c7eca10452%c +395ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewProducer() | receiver created%c +31ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569175999
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | receiver notified%c +1m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569236361
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | receiver notified%c +520ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569236361
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconsume() | 36798ee0-0af1-4f64-b846-83bfdb09b16b:406e790d-2b87-4a93-9081-d0c8b9abc060%c +2m" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569296630
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:a3abe571-fc1b-4349-9b93-307accf2349e%c +52ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569296630
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 1dfc473c-7ca2-4c15-877b-0185064d625d:a3abe571-fc1b-4349-9b93-307accf2349e:audio%c +2m" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645569296630
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created a3abe571-fc1b-4349-9b93-307accf2349e%c +1m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569296630
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewProducer() | receiver created%c +8ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569296630
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconsume() | 36798ee0-0af1-4f64-b846-83bfdb09b16b:5e2df89c-e2fa-48e9-b872-6f080dc79468%c +459ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569296630
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:f38779e7-a6d6-4bfe-aad7-f379f48add4b%c +89ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569296630
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 1dfc473c-7ca2-4c15-877b-0185064d625d:f38779e7-a6d6-4bfe-aad7-f379f48add4b:video%c +552ms" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645569296631
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created f38779e7-a6d6-4bfe-aad7-f379f48add4b%c +544ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569296631
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewProducer() | receiver created%c +27ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569296631
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | receiver notified%c +1m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569356898
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conProducerUpdate() | receiver notified%c +761ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569356898
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconsume() | 6ba59e02-7642-4fbc-a72d-408dba13dad0:2dd8d0d9-715b-4354-81a8-5353babf9505%c +2m" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569417158
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:0799390b-5eaa-47b0-88cd-3d515cda8b73%c +198ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569417158
+  },
+  {
+    level: 'INFO',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%cdenso-client:PresenceStore %csetUserReceiver() | User: 5ba58205-daee-4e23-bbea-46257ea3da14:0799390b-5eaa-47b0-88cd-3d515cda8b73:audio%c +2m" "color: #FF3399" "color: inherit" "color: #FF3399"',
+    source: 'console-api',
+    timestamp: 1645569417158
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %ccreateReceiver() | receiver created 0799390b-5eaa-47b0-88cd-3d515cda8b73%c +1m" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569417158
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:Client %conNewProducer() | receiver created%c +18ms" "color: #FF0000" "color: inherit" "color: #FF0000"',
+    source: 'console-api',
+    timestamp: 1645569417158
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cconsume() | 6ba59e02-7642-4fbc-a72d-408dba13dad0:c0ea4925-279f-417e-b317-43fcd2147c4b%c +301ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569417158
+  },
+  {
+    level: 'DEBUG',
+    message: 'https://qa.tich.academy/denso/_nuxt/e51eeb8.js 1:1502812 "%ckamaji-client:RoomChannel %cresumeConsumer() | 00617b2a-4e60-49ed-af06-909c07ace96a:5e387fac-edf7-4db1-9e97-9e670933446a%c +130ms" "color: #9933FF" "color: inherit" "color: #9933FF"',
+    source: 'console-api',
+    timestamp: 1645569417158
+  },
+  ... 11 more items
+]
+2022-02-22T22:37:59.057Z INFO webdriver: RESULT []
+2022-02-22T22:37:59.059Z INFO webdriver: COMMAND deleteSession()
+2022-02-22T22:37:59.060Z INFO webdriver: [DELETE] http://143.244.160.107:4445/wd/hub/session/b69091eb4f59b9ae02b79c0a948a2315

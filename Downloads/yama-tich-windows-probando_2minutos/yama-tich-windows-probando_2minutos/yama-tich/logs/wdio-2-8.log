@@ -1,0 +1,126 @@
+2022-02-09T22:22:20.545Z WARN @wdio/utils:shim: You are running tests with @wdio/sync which will be discontinued starting Node.js v16.Read more on https://github.com/webdriverio/webdriverio/discussions/6702
+2022-02-09T22:22:21.863Z INFO @wdio/local-runner: Run worker command: run
+2022-02-09T22:22:22.299Z DEBUG @wdio/config:utils: Found '@babel/register' package, auto-compiling files with Babel
+2022-02-09T22:22:23.746Z DEBUG @wdio/local-runner:utils: init remote session
+2022-02-09T22:22:23.753Z DEBUG @wdio/utils:initialiseServices: initialise service "shared-store" as NPM package
+2022-02-09T22:22:24.004Z DEBUG @wdio/sync: Finished to run "beforeSession" hook in 3ms
+2022-02-09T22:22:25.060Z DEBUG @wdio/local-runner:utils: init remote session
+2022-02-09T22:22:25.063Z INFO webdriver: Initiate new session using the WebDriver protocol
+2022-02-09T22:22:25.089Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session
+2022-02-09T22:22:25.089Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      'goog:chromeOptions': [Object],
+      'goog:loggingPrefs': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    'goog:chromeOptions': { args: [Array] },
+    'goog:loggingPrefs': { browser: 'ALL' }
+  }
+}
+2022-02-09T22:22:26.788Z DEBUG @wdio/sync: Finished to run "before" hook in 0ms
+2022-02-09T22:22:37.827Z INFO webdriver: COMMAND navigateTo("https://qa.tich.academy/denso/b7bb0246-a389-45dd-b219-54a1a2e3e819")
+2022-02-09T22:22:37.827Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/url
+2022-02-09T22:22:37.827Z INFO webdriver: DATA {
+  url: 'https://qa.tich.academy/denso/b7bb0246-a389-45dd-b219-54a1a2e3e819'
+}
+2022-02-09T22:22:48.577Z INFO webdriver: COMMAND executeScript("return (() => localStorage.setItem("debug", "kamaji-client:*")).apply(null, arguments)", <object>)
+2022-02-09T22:22:48.615Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/execute/sync
+2022-02-09T22:22:48.616Z INFO webdriver: DATA {
+  script: 'return (() => localStorage.setItem("debug", "kamaji-client:*")).apply(null, arguments)',
+  args: []
+}
+2022-02-09T22:22:50.525Z INFO webdriver: COMMAND refresh()
+2022-02-09T22:22:50.526Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/refresh
+2022-02-09T22:23:04.348Z INFO webdriver: COMMAND findElement("css selector", "form input[name=name]")
+2022-02-09T22:23:04.349Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element
+2022-02-09T22:23:04.349Z INFO webdriver: DATA { using: 'css selector', value: 'form input[name=name]' }
+2022-02-09T22:23:05.068Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'efa1d0cd-1652-444e-9cc0-24eebb48208a'
+}
+2022-02-09T22:23:05.087Z INFO webdriver: COMMAND elementClear("efa1d0cd-1652-444e-9cc0-24eebb48208a")
+2022-02-09T22:23:05.088Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element/efa1d0cd-1652-444e-9cc0-24eebb48208a/clear
+2022-02-09T22:23:07.578Z INFO webdriver: COMMAND elementSendKeys("efa1d0cd-1652-444e-9cc0-24eebb48208a", "guest_5")
+2022-02-09T22:23:07.579Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element/efa1d0cd-1652-444e-9cc0-24eebb48208a/value
+2022-02-09T22:23:07.579Z INFO webdriver: DATA { text: 'guest_5' }
+2022-02-09T22:23:13.262Z INFO webdriver: COMMAND findElement("css selector", "form input[name=email]")
+2022-02-09T22:23:13.263Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element
+2022-02-09T22:23:13.263Z INFO webdriver: DATA { using: 'css selector', value: 'form input[name=email]' }
+2022-02-09T22:23:25.438Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'dc1536ba-692b-40ac-89ea-910cb633b964'
+}
+2022-02-09T22:23:25.450Z INFO webdriver: COMMAND elementClear("dc1536ba-692b-40ac-89ea-910cb633b964")
+2022-02-09T22:23:25.450Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element/dc1536ba-692b-40ac-89ea-910cb633b964/clear
+2022-02-09T22:23:29.286Z INFO webdriver: COMMAND elementSendKeys("dc1536ba-692b-40ac-89ea-910cb633b964", "test_guest_A_5@bunsan.io")
+2022-02-09T22:23:29.287Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element/dc1536ba-692b-40ac-89ea-910cb633b964/value
+2022-02-09T22:23:29.287Z INFO webdriver: DATA { text: 'test_guest_A_5@bunsan.io' }
+2022-02-09T22:23:37.119Z INFO webdriver: COMMAND findElement("css selector", "form button[type="submit"]")
+2022-02-09T22:23:37.120Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element
+2022-02-09T22:23:37.120Z INFO webdriver: DATA { using: 'css selector', value: 'form button[type="submit"]' }
+2022-02-09T22:23:37.851Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '40a139b5-f2be-4135-b22c-fbe2c6ec24a5'
+}
+2022-02-09T22:23:37.856Z INFO webdriver: COMMAND elementClick("40a139b5-f2be-4135-b22c-fbe2c6ec24a5")
+2022-02-09T22:23:37.857Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element/40a139b5-f2be-4135-b22c-fbe2c6ec24a5/click
+2022-02-09T22:23:42.507Z DEBUG @wdio/sync: Finished to run "afterTest" hook in 0ms
+2022-02-09T22:23:42.514Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-09T22:23:42.515Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/element
+2022-02-09T22:23:42.515Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-09T22:23:44.495Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space() = "Reload session"]"}\n' +
+    '  (Session info: headless chrome=98.0.4758.82)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x00E9FDC3+2555331]\n' +
+    '\tOrdinal0 [0x00E377F1+2127857]\n' +
+    '\tOrdinal0 [0x00D32E08+1060360]\n' +
+    '\tOrdinal0 [0x00D5E49E+1238174]\n' +
+    '\tOrdinal0 [0x00D5E69B+1238683]\n' +
+    '\tOrdinal0 [0x00D89252+1413714]\n' +
+    '\tOrdinal0 [0x00D77B54+1342292]\n' +
+    '\tOrdinal0 [0x00D875FA+1406458]\n' +
+    '\tOrdinal0 [0x00D77976+1341814]\n' +
+    '\tOrdinal0 [0x00D536B6+1193654]\n' +
+    '\tOrdinal0 [0x00D54546+1197382]\n' +
+    '\tGetHandleVerifier [0x01039622+1619522]\n' +
+    '\tGetHandleVerifier [0x010E882C+2336844]\n' +
+    '\tGetHandleVerifier [0x00F323E1+541697]\n' +
+    '\tGetHandleVerifier [0x00F31443+537699]\n' +
+    '\tOrdinal0 [0x00E3D18E+2150798]\n' +
+    '\tOrdinal0 [0x00E41518+2168088]\n' +
+    '\tOrdinal0 [0x00E41660+2168416]\n' +
+    '\tOrdinal0 [0x00E4B330+2208560]\n' +
+    '\tBaseThreadInitThunk [0x752DFA29+25]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x77117A9E+286]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x77117A6E+238]\n'
+}
+2022-02-09T22:23:44.503Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space() = "Reload session"]")
+2022-02-09T22:23:44.504Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81/elements
+2022-02-09T22:23:44.504Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space() = "Reload session"]'
+}
+2022-02-09T22:23:45.949Z INFO webdriver: RESULT []
+2022-02-09T22:25:45.289Z INFO @wdio/local-runner: Received SIGINT, giving process 5000ms to shutdown gracefully
+2022-02-09T22:25:45.297Z INFO @wdio/local-runner: Run worker command: endSession
+2022-02-09T22:25:45.297Z INFO webdriver: COMMAND deleteSession()
+2022-02-09T22:25:45.298Z INFO webdriver: [DELETE] http://localhost:4444/wd/hub/session/4ddd7e3877f0c228e3286197e0fd6b81
+2022-02-09T22:25:45.307Z ERROR @wdio/local-runner: Failed launching test session: RequestError: connect ECONNREFUSED 127.0.0.1:4444
+    at ClientRequest.<anonymous> (C:\Users\user\Desktop\yama-windows\yama-tich\node_modules\got\dist\source\core\index.js:962:111)
+    at Object.onceWrapper (events.js:520:26)
+    at ClientRequest.emit (events.js:412:35)
+    at ClientRequest.emit (domain.js:475:12)
+    at ClientRequest.origin.emit (C:\Users\user\Desktop\yama-windows\yama-tich\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:400:28)
+    at Socket.emit (domain.js:475:12)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)
